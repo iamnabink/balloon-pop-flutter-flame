@@ -135,7 +135,7 @@ class FancyAppBar extends StatelessWidget implements PreferredSizeWidget {
         mainAxisSize: MainAxisSize.min,
         children: [
           const Icon(
-            Icons.celebration,
+            Icons.star,
             color: AppColors.textWhite,
             size: 20,
           ),
