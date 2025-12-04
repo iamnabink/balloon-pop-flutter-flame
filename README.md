@@ -33,25 +33,6 @@ A fun educational game built with Flutter and Flame where players catch Nepali l
    flutter run
    ```
 
-### Running in VS Code
-
-The project includes VS Code launch configurations (`.vscode/launch.json`). You can:
-
-1. Open the project in VS Code
-2. Press `F5` or go to Run and Debug
-3. Select one of the available configurations:
-   - **gubbara (Flutter)** - Debug mode (default)
-   - **gubbara (Flutter) - Profile** - Profile mode for performance testing
-   - **gubbara (Flutter) - Release** - Release mode
-   - **gubbara (Flutter) - iOS Simulator** - Run on iOS simulator
-   - **gubbara (Flutter) - Android Emulator** - Run on Android emulator
-   - **gubbara (Flutter) - Chrome** - Run in Chrome browser
-
-## Controls
-
-- **Left Arrow** or **A**: Move basket left
-- **Right Arrow** or **D**: Move basket right
-
 ## Assets
 
 The game follows Flame's recommended asset structure:
@@ -61,7 +42,6 @@ assets/
 ├── audio/
 │   └── balloon-burst.mp3  # Sound effect for wrong letter catches
 └── images/
-    ├── char_1.png through char_36.png  # Nepali character images
     ├── red.png, blue.png, etc.  # Balloon sprite images in various colors
     └── *SpriteSheetAnimation.png  # Burst animation sprite sheets
 ```
@@ -74,7 +54,6 @@ All assets are automatically loaded when the game starts using `images.loadAllIm
 - `lib/game/balloon_game.dart`: Main game class with physics and game logic
 - `lib/game/components/`: Game components
   - `balloon.dart`: Balloon with Nepali letters
-  - `basket.dart`: Player-controlled basket
   - `platform.dart`: Moving platforms for balloons to bounce off
   - `world_boundaries.dart`: Physics boundaries
   - `burst_animation.dart`: Sprite sheet animation for balloon bursts
