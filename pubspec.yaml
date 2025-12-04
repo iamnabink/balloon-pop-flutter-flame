@@ -1,0 +1,36 @@
+name: gubbara
+description: A Flutter game featuring balloon bounce letters with Nepali characters
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flame: ^1.34.0
+  flame_audio: ^2.11.12
+  flame_bloc: ^1.12.19
+  flame_forge2d: ^0.19.2+2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_launcher_icons: ^0.14.4
+
+flutter:
+  uses-material-design: true
+  
+  assets:
+    - assets/audio/
+    - assets/images/
+
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/launcher_icon.png"
+  min_sdk_android: 21
+  remove_alpha_ios: true
+
